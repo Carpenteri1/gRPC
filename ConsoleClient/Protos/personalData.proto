@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcPersonalDataClient";
+
+package personalDataPkg;
+
+// The greeting service definition.
+service SendPersonDataService {
+  // Sends a greeting
+  rpc SendReplayData (PersonalDataRequest) returns (PersonalDataReply);
+}
+
+// The request message containing the user's name.
+message PersonalDataRequest 
+{
+  string firstname = 1;
+  string surname = 2;
+  string age = 3;
+  string adress = 4;
+}
+
+// The response message containing the greetings.
+message PersonalDataReply {
+  string message = 1;
+}

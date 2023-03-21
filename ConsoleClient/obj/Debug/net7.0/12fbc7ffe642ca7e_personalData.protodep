@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/PersonalData.cs \
+obj\Debug\net7.0\Protos/PersonalDataGrpc.cs: Protos/personalData.proto
